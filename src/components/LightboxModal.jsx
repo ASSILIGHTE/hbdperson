@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Heart, MapPin, Calendar } from 'lucide-react';
+import { X, Heart } from 'lucide-react';
 
 export default function LightboxModal({ photo, onClose }) {
   useEffect(() => {
@@ -59,15 +59,19 @@ export default function LightboxModal({ photo, onClose }) {
             </div>
 
             <div className="flex items-center justify-center gap-4 text-xs md:text-sm text-gray-500 font-sans mt-2">
-              <span className="inline-flex items-center gap-1">
-                <Calendar className="w-3.5 h-3.5 text-sky-500" />
-                {photo.date}
-              </span>
-              <span>•</span>
-              <span className="inline-flex items-center gap-1">
-                <MapPin className="w-3.5 h-3.5 text-sky-500" />
-                {photo.location}
-              </span>
+              {photo.date && (
+                <span>
+                  {photo.date}
+                </span>
+              )}
+              {photo.location && (
+                <>
+                  <span>•</span>
+                  <span>
+                    {photo.location}
+                  </span>
+                </>
+              )}
             </div>
           </div>
         </motion.div>

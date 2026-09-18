@@ -71,23 +71,25 @@ export default function StorySection() {
             </div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.9, delay: 0.4 }}
-            className="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-[#F0F7FF] to-[#E0F2FE] border border-sky-100 shadow-md shadow-sky-900/5 relative"
-          >
-            <p className="text-xl md:text-2xl font-serif text-[#0C4A6E] leading-relaxed">
-              "{line2}"
-            </p>
+          {line2 && (
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.9, delay: 0.4 }}
+              className="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-[#F0F7FF] to-[#E0F2FE] border border-sky-100 shadow-md shadow-sky-900/5 relative"
+            >
+              <p className="text-xl md:text-2xl font-serif text-[#0C4A6E] leading-relaxed">
+                "{line2}"
+              </p>
 
-            <div className="mt-4 flex justify-center items-center gap-2">
-              <svg className="w-32 h-4 text-sky-400" viewBox="0 0 100 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                <path d="M5,10 Q25,18 50,10 T95,12" />
-              </svg>
-            </div>
-          </motion.div>
+              <div className="mt-4 flex justify-center items-center gap-2">
+                <svg className="w-32 h-4 text-sky-400" viewBox="0 0 100 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                  <path d="M5,10 Q25,18 50,10 T95,12" />
+                </svg>
+              </div>
+            </motion.div>
+          )}
         </div>
 
         {/* Small Doodle Note */}
@@ -99,7 +101,7 @@ export default function StorySection() {
           className="mt-10 inline-flex items-center gap-2 font-handwritten text-2xl text-[#0284C7]"
         >
           <Sparkles className="w-5 h-5 text-sky-500 inline" />
-          <span>And the best part is... we're still writing it.</span>
+          <span>Dan bagian terindahnya bukan tentang bagaimana semuanya bermula, tapi tentang bagaimana kita masih memilih untuk menulis kelanjutannya... bersama..</span>
           <Star className="w-4 h-4 fill-amber-300 text-amber-400 inline" />
         </motion.div>
       </div>

@@ -7,7 +7,6 @@ export const contentData = {
   story: {
     title: "Di antara begitu banyak manusia yang hadir di dunia, entah bagaimana semesta membawaku kepadamu. Dan dari sekian banyak kemungkinan, aku beruntung bisa mengenalmu",
     line1: "Sejujurnya... aku tak ingin menukar kisah sederhana yang kita punya dengan kisah apa pun di dunia.",
-    line2: "Dan bagian terindahnya bukan tentang bagaimana semuanya bermula, tapi tentang bagaimana kita masih memilih untuk menulis kelanjutannya... bersama."
   },
   photos: [
     {
@@ -38,7 +37,7 @@ export const contentData = {
       id: 4,
       url: "/4.jpeg",
       caption: "Us",
-      date: "✨ Episode bahagia yang semoga berlanju",
+      date: "✨ Episode bahagia yang semoga berlanjut",
       rotation: "rotate-2",
       mobileOrder: 4
     },
